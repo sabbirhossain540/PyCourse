@@ -12,11 +12,16 @@ class PlayerCharecters:
     def run(self):
         print('run')
 
-    def speak(self):
-        print(f'my name is {self._name} and age is {self._age}')
+    def speak(self, myList, a):
+        outputList = []
+        for item in myList:
+            res = item * a
+            outputList.append(res)
+        
+        print(outputList)
 
 player1 = PlayerCharecters("Sabbir", 22)
 player2 = PlayerCharecters('sakil', 25)
-player1.speak()
+player1.speak([1,2,3, 434], 5)
 
 
